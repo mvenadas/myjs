@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Data Types</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Data Types</h1>
+    <h2>The 7 Primative Data Types</h2>
+    <ol>
+      <li>
+        <strong>Number:</strong> Floating point numbers = Used for decimals and
+        integers <br />
+        <code>Example: let age = 23;</code>
+      </li>
+      <li>
+        <strong>String:</strong> Sequence of characters = Used for text <br />
+        <code>Example: let firstName = 'Michael';</code>
+      </li>
+      <li>
+        <strong>Boolean:</strong> Logical type that can only be true of false =
+        Used for taking decisions <br />
+        <code>Example: let fullAge = true;</code>
+      </li>
+      <li>
+        <strong>Undefined:</strong> Value taken by a variable that is not yet
+        defined ("empty value") <br />
+        <code>Example: let children;</code>
+      </li>
+      <li><strong>Null:</strong> Also means "empty value"</li>
+      <li>
+        <strong>Symbol (ES2015):</strong> Value that is unique and cannot be
+        changed
+      </li>
+      <li>
+        <strong>BigInt:</strong> Larger integers that the Number type can hold
+      </li>
+    </ol>
+
+    <h2>Type of</h2>
+    <p><strong>type of:</strong> shows you what type of data type</p>
+    <p><code>Example: console.log(typeof myAge)</code></p>
+
+    <script>
+      // Example of a Number
+      let myAge = 44;
+
+      // Example of a String
+      let myName = "Michael";
+
+      // Example of a Boolean
+      let truth = true;
+
+      // Example of a Undefined
+      let cars;
+
+      console.log(myAge, myName, truth, cars);
+
+      console.log(typeof myAge);
+      console.log(typeof myName);
+      console.log(typeof truth);
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

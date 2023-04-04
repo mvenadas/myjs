@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Truthy and Falsy Values</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Truthy and Falsy Values</h1>
+
+    <p>
+      <strong>Falsy:</strong> Are values that are not exactly false but they will become
+      false when we try to convert them to a boolean. All of these 5 values will be converted to false when we try to convert as a boolean.
+      <ol>
+        <li>0 (Zero)</li>
+        <li>Empty String</li>
+        <li>Undefined</li>
+        <li>Null</li>
+        <li>NaN</li>
+      </ol>
+    </p>
+
+    <code>
+      console.log(Boolean(0));
+      <br>
+      Answer: False
+      <br><br>
+      console.log(Boolean(undefined));
+      <br>
+      Answer: False
+      <br><br>
+      console.log(Boolean("Michael"));
+      <br>
+      Answer: True
+      <br><br>
+      console.log(Boolean({}));
+      <br>
+      Answer: true
+      <br><br>
+      console.log(Boolean(""));
+      <br>
+      Answer: False
+      <br><br>
+      Example of an if/else statement where Javascript converts zero to false and console logs the else statement.
+      <br><br>
+      const money = 0;
+      <br>
+      if(money) {
+        <br>
+        console.log("Invest it");
+        <br>
+      } else {
+        <br>
+        console.log("Get a job!");
+        <br>
+      }
+      <br><br>
+      Answer: Get a job!
+    </code>
+
+    <p><strong>Truthy:</strong> Any string or number that is not zero or part of the list above will be converted to true.</p>
+    <script>
+      console.log(Boolean(0));
+      console.log(Boolean(undefined));
+      console.log(Boolean("Michael"));
+      console.log(Boolean({}));
+      console.log(Boolean(""));
+
+      const money = 0;
+
+      // Falsy Statement
+      if(money) {
+        console.log("Invest it!");
+      } else {
+        console.log("Get a job!");
+      }
+
+      // Truthy Statement
+      const myMoney = 1000000;
+
+      if(myMoney) {
+        console.log("I'm rich!");
+      } else {
+        console.log(":[");
+      }
+
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

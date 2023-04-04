@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Equality Operators</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Equality Operators</h1>
+    <h2>Examples of equality operators</h2>
+    <code>
+      <p>
+        <strong>The Strict Equality Operator <mark>===</mark></strong> compares
+        both sides of the center equal sign to see of both values are equal to
+        each other. It only returns true with both values are the same.
+      </p>
+      const age = 18;
+      <br />
+      if (age === 18)
+      <br />
+      console.log("You just became an adult!");
+      <br /><br />
+      Note: If the if statement is exact it does not require the curly brackets
+      {} to execute any code.
+      <br /><br />
+      Examples:
+      <br /><br />
+      18 === 18
+      <br />
+      Answer: True
+      <br /><br />
+      18 === 19
+      <br />
+      Answer: False
+      <br /><br />
+      <p>
+        <strong>The Loose Equality Operator <mark>==</mark></strong> will
+        perform Type Coercion. In the example below, <mark>==</mark> will
+        convert the "18" string to a number. <br /><br />
+        Note: This can cause issues in your code, so try yo avoid using this
+        operator as much as you can.
+      </p>
+      Example:
+      <br /><br />
+      "18" == 18
+      <br />
+      Answer: True
+    </code>
+
+    <br /><br />
+    <h2>
+      Example using the prompt function with the Strict Equality Operator
+      <mark>===</mark>
+    </h2>
+    <code>
+      <p>
+        <strong>Exercise:</strong> Use the prompt function. Enter the number 15
+        or 30 in th prompt box. In your code, manually convert the "favourite"
+        variable to a number. Then use the if / elseif / else statement.
+      </p>
+      Note: After entering the number in the promt box, JS will identify the
+      value as a string. Since we will be using the <mark>===</mark> operator
+      you will need to manually convert the string to a number. <br /><br />
+      const favourite = Number(prompt("What is your favourite number"));
+      <br />
+      console.log(favourite);
+      <br /><br />
+      if (favourite === 15) {
+      <br />
+      console.log("Number 15, YAY!!!");
+      <br />
+      } else if (favourite === 30) {
+      <br />
+      console.log("Number 30, YAY!!!");
+      <br />
+      } else {
+      <br />
+      console.log("Sorry, please input the number 15 or 30!");
+      <br />
+      }
+    </code>
+
+    <br /><br />
+    <h2>Example using the Strict Inequality Operator <mark>!==</mark></h2>
+    <code>
+      if (favourite !== 15) {
+      <br />
+      console.log("Wait, what about all the other numbers?");
+      <br />
+      }
+    </code>
+
+    <script>
+      // Strict Equality Operator Example
+      const age = 18;
+      if (age === 18) console.log("You just became an adult!");
+
+      // Example using the prompt function and storing data into a variable
+      const favourite = Number(prompt("What is your favourite number"));
+      console.log(favourite);
+      if (favourite === 15) {
+        console.log("Number 15, YAY!!!");
+      } else if (favourite === 30) {
+        console.log("Number 30, YAY!!!");
+      } else {
+        console.log("Sorry, please input the number 15 or 30!");
+      }
+
+      // Example using the Inequality Operator
+      if (favourite !== 15) {
+        console.log("Wait, what about all the other numbers?");
+      }
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

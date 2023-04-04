@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment: Prompt Function</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      #clueBtn {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+    <button id="clueBtn">Get a clue</button>
+
+    <script>
+      const message = prompt("What's the password?");
+
+      if (message === "hi") {
+        document.querySelector("h1").innerHTML =
+          "Magic word correct, you may enter.";
+      } else if (message === "hello") {
+        document.querySelector("h1").innerHTML =
+          "That will suffice, you may enter";
+      } else {
+        document.querySelector("h1").innerHTML = "Wrong! Go Home!";
+      }
+    </script>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

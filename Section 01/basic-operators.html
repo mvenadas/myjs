@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Basic Operators</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Basic Operators</h1>
+    <p>
+      Operators allows you to transform or combine multiple values. It can be
+      used for simple math or more complex equations.
+    </p>
+    <code>
+      <strong>Math Operators</strong>
+      <br />
+      const ageMichael = 2023 - 1979; <br />Answer: 44
+      <br />
+      The "-" subtracts the two years.
+      <br /><br />
+      Example of adding more operators to a console log:
+      <br />
+      console.log((ageMichael * ageRosie) / 10, 2 ** 3);
+      <br />
+      Note: 2 ** 3 means 2 to the power of 3 = 2 * 2 *2
+      <br /><br />
+      console.log(firstName + ' ' + lastName);
+      <br />
+      Answer: Michael Venadas
+      <br /><br />
+      <strong>Assignment Operators</strong>
+      <br />
+      let x = 10 + 5;
+      <br />
+      console.log(x);
+      <br />
+      Answer: 15
+      <br /><br />
+      x += 10;
+      <br />
+      Note: x = x + 10
+      <br />
+      Answer: 25
+      <br /><br />
+      x *= 4
+      <br />
+      Note: x = x * 4
+      <br />
+      Answer: 100
+      <br /><br />
+      x++;
+      <br />
+      Note: x = x + 1
+      <br />
+      Answer: 101
+      <br /><br />
+      x--;
+      <br />
+      Note: x = x - 1
+      <br />
+      Answer: 100
+      <br /><br />
+      <strong>Comparison Operators</strong>
+      <br />
+      console.log(ageMichael > ageRosie);
+      <br />
+      Answer: true
+      <br /><br />
+      Note: Other operators
+      <br />
+      > Greater than
+      <br />
+      < Less than
+      <br />
+      >= Greater than or equal to
+      <br />
+      <= Less than or equal to
+    </code>
+
+    <h3>Resources:</h3>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence"
+      target="_blank"
+      >https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence</a
+    >
+
+    <script>
+      const now = 2023;
+      ageMichael = now - 1979;
+      ageRosie = now - 1984;
+
+      // Math Operators
+      console.log(ageMichael, ageRosie);
+      console.log((ageMichael * ageRosie) / 10, 2 ** 3);
+
+      const firstName = "Micheal";
+      const lastName = "Venadas";
+
+      console.log(firstName + " " + lastName);
+
+      // Assignment Operators
+      let x = 10 + 5;
+      console.log(x);
+
+      x += 10;
+      console.log(x);
+
+      x *= 4;
+      console.log(x);
+
+      x++;
+      console.log(x);
+
+      x--;
+      console.log(x);
+
+      // Comparison Operators
+      console.log(ageMichael > ageRosie);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

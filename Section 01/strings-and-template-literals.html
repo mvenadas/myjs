@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Strings And Template Literals</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Strings And Template Literals</h1>
+
+    <p>Practice concatenating strings.</p>
+
+    <code>
+      Defined Variables:
+      <br />
+      const firstName = "Michael";
+      <br />
+      const job = "Front End Developer";
+      <br />
+      const birthYear = 1979;
+      <br />
+      const year = 2023;
+      <br /><br />
+
+      const michael = "I'm " + firstName + ', a ' + (year - birthYear) + ' ' +
+      'years old' + job + '!';
+      <br /><br />
+      Answer: I'm Michael, a 44 years old Front End Developer!
+    </code>
+    <br /><br />
+    <p>Starting with ES6 - template literals were introduced.</p>
+
+    <code>
+      const michaelNew = `I'm ${firstName}, a ${year - birthYear} years old
+      ${job}!`;
+      <br /><br />
+      Answer: I'm Michael, a 44 years old Front End Developer!
+    </code>
+    <p>HTML can even be used within the template literals.</p>
+    <code>
+      Run to see example on the console:
+      <br />
+      console.log(htmlExample);
+    </code>
+
+    <script>
+      // Concatenating strings
+      const firstName = "Michael";
+      const job = "Front End Developer";
+      const birthYear = 1979;
+      const year = 2023;
+
+      const michael =
+        "I'm " +
+        firstName +
+        ", a " +
+        (year - birthYear) +
+        " " +
+        "years old " +
+        job +
+        "!";
+
+      console.log(michael);
+
+      // Template Literals
+      const michaelNew = `
+      I'm ${firstName}, a ${year - birthYear} years old ${job}!
+      `;
+
+      console.log(michaelNew);
+
+      const htmlExample = `
+      <header>I am the Head!</header>
+      <div>
+        <p>Hello! I am the content!</p>
+      </div>  
+      `;
+
+      console.log(htmlExample);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

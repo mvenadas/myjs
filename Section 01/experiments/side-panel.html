@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment: Side Panel</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      #sidePanel {
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(145, 66, 66);
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        padding: 25px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Side Panel</h1>
+
+    <button onclick="psco()">PSCO</button>
+    <button onclick="ag()">Apakula Gaming</button>
+
+    <div id="sidePanel">
+      <button id="closeBtn">X</button>
+      <div id="psco">
+        <div class="pscoContent">
+          <p>PSCO</p>
+        </div>
+      </div>
+
+      <div id="ag">
+        <div class="agContent">
+          <p>Apakula Gaming</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function closeBtn() {
+        document.getElementById("sidePanel").style.display = "none";
+      }
+      document.querySelector("#closeBtn").addEventListener("click", closeBtn);
+
+      function psco() {
+        document.getElementById("sidePanel").style.display = "block";
+        document.getElementById("ag").style.display = "none";
+      }
+
+      function ag() {
+        document.getElementById("sidePanel").style.display = "block";
+        document.getElementById("psco").style.display = "none";
+      }
+    </script>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

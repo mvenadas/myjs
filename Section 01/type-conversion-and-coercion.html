@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Conversion and Coercion</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Conversion and Coercion</h1>
+    <p>
+      Converting between types is essential in all programming languages.
+      Example: Converting a string to a number or a string to a number.
+    </p>
+    <ul>
+      <li>
+        <strong>Type Conversion:</strong> When we manually convert from one type
+        to the other.
+      </li>
+      <li>
+        <strong>Coercion:</strong> When Javascript automatically converting
+        types behind the scences.
+      </li>
+    </ul>
+    <p>
+      <strong>Example of conversion manually</strong>
+    </p>
+    <code>
+      How to manually convert a string to a number:
+      <br /><br />
+      const inputYear = "1991";
+      <br /><br />
+      console.log(Number(inputYear) + 18);
+      <br />
+      Answer: 2009
+      <br /><br />
+      How to manually convert a number to a string:
+      <br />
+      console.log(String(inputYear) + 18);
+      <br />
+      Answer: 199118
+      <br /><br />
+      Note: Number() and String() are preset functions in Javascript.
+    </code>
+    <br /><br />
+    <p>
+      <strong>Example of Coercion</strong><br />Whenever an operator is dealing
+      with two values with different types. Js will then convert on of the
+      values to match the other value.
+    </p>
+    <code>
+      console.log('I am ' + 23 + ' years old ');
+      <br />
+      Answer: I am 23 years old
+      <br /><br />
+      console.log("23" - "10" - 3);
+      <br />
+      Answer: 10
+      <br />
+      Note: Javascript actually converted the strings into a number. The minus
+      sign triggered the conversion. You can also use the "*" and "/" operators
+      and it will convert to a number.
+      <br /><br />
+      console.log("23" + "10" + 3);
+      <br />
+      Answer: 23103
+      <br />
+      Note: Javascript converted it all to a string.
+      <br /><br />
+      Examples:
+      <br />
+      2+3+4+"5"
+      <br />
+      Answer: "95"
+      <br /><br />
+      let n = "1" + 1;
+      <br />
+      n = n -1;
+      <br />
+      Answer: 10
+    </code>
+
+    <script>
+      const inputYear = "1991";
+      console.log(Number(inputYear) + 18);
+      console.log(String(inputYear) + 18);
+
+      console.log("I am " + 23 + " years old ");
+      console.log("23" - "10" - 3);
+      console.log("23" + "10" + 3);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
