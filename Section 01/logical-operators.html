@@ -10,7 +10,85 @@
   <body>
     <h1>Logical Operators</h1>
 
-    <script></script>
+    <code>
+      const hasDriversLicense = true;
+      <br />
+      const hasGoodVision = false;
+      <br /><br />
+
+      // And Operator
+      <br />
+      console.log(hasDriversLicense && hasGoodVision);
+      <br /><br />
+
+      // Or Operator
+      <br />
+      console.log(hasDriversLicense || hasGoodVision);
+      <br /><br />
+
+      // Not Operator - it will invert the value
+      <br />
+      console.log(!hasDriversLicense);
+      <br /><br />
+      <p>Now check if Colin should be driving</p>
+      if (hasDriversLicense && hasGoodVision) {
+      <br />
+      console.log("Colin will drive!");
+      <br />
+      } else {
+      <br />
+      console.log("No, someone else should drive!");
+      <br />
+      }
+      <br /><br />
+      const isTired = false;
+      <br />
+      console.log(hasDriversLicense && hasGoodVision && isTired);
+      <br /><br />
+
+      // Colin is able to drive if he has a driver's license, has good vision
+      and is NOT tired.
+      <br /><br />
+      if (hasDriversLicense && hasGoodVision && !isTired) {
+      <br />
+      console.log("Colin will drive!");
+      <br />
+      } else {
+      <br />
+      console.log("No, someone else should drive!");
+      <br />
+      }
+    </code>
+
+    <script>
+      const hasDriversLicense = true;
+      const hasGoodVision = true;
+
+      // And Operator
+      console.log(hasDriversLicense && hasGoodVision);
+
+      // Or Operator
+      console.log(hasDriversLicense || hasGoodVision);
+
+      // Not Operator - it will invert the value
+      console.log(!hasDriversLicense);
+
+      if (hasDriversLicense && hasGoodVision) {
+        console.log("Colin will drive!");
+      } else {
+        console.log("No, someone else should drive!");
+      }
+
+      const isTired = false;
+      console.log(hasDriversLicense && hasGoodVision && isTired);
+
+      // Colin is able to drive if he has a driver's license, has good vision and is NOT tired.
+      if (hasDriversLicense && hasGoodVision && !isTired) {
+        console.log("Colin will drive!");
+      } else {
+        console.log("No, someone else should drive!");
+      }
+    </script>
 
     <script src="js/main.js"></script>
   </body>
