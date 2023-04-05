@@ -23,16 +23,12 @@
   <body>
     <h1>Side Panel</h1>
 
-    <button onclick="psco()">PSCO</button>
-    <button onclick="ag()">Apakula Gaming</button>
+    <button>PSCO</button>
+    <button>Apakula Gaming</button>
 
     <div id="sidePanel">
       <button id="closeBtn">X</button>
-      <div id="psco">
-        <div class="pscoContent">
-          <p>PSCO</p>
-        </div>
-      </div>
+      <div id="psco"></div>
 
       <div id="ag">
         <div class="agContent">
@@ -41,22 +37,7 @@
       </div>
     </div>
 
-    <script>
-      function closeBtn() {
-        document.getElementById("sidePanel").style.display = "none";
-      }
-      document.querySelector("#closeBtn").addEventListener("click", closeBtn);
-
-      function psco() {
-        document.getElementById("sidePanel").style.display = "block";
-        document.getElementById("ag").style.display = "none";
-      }
-
-      function ag() {
-        document.getElementById("sidePanel").style.display = "block";
-        document.getElementById("psco").style.display = "none";
-      }
-    </script>
+    <script></script>
 
     <script src="../js/main.js"></script>
   </body>

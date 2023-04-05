@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Challenge: #3</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>Coding Challenge #3</h1>
+    <p>
+      There are two gymnastics teams, <strong>Dolphins</strong> and
+      <strong>Koalas</strong>. They compete against each other 3 times. The
+      winner with the highest average score wins a trophy!
+    </p>
+    <ul>
+      <li>
+        Calculate the average score for each team, using the test data below
+      </li>
+      <li>
+        Compare the team's average scores to determine the winner of the
+        competition, and print it to the console. Don't forget that there can be
+        a draw, so test for that as well (draw means they have the same average
+        score)
+      </li>
+    </ul>
+    <p>Test Data: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110</p>
+    <code>
+      const dolphins = (96 + 108 + 89) / 3;
+      <br />
+      console.log(dolphins);
+      <br /><br />
+      const koalas = (88 + 91 + 110) / 3;
+      <br />
+      console.log(koalas);
+      <br />
+      console.log(dolphins, koalas);
+      <br /><br />
+      if (dolphins > koalas) {
+      <br />
+      console.log("Dolphins win the championships!");}
+      <br /><br />
+      else if (koalas > dolphins) {
+      <br />
+      console.log("Koalas win the championships!"); }
+      <br /><br />
+      else if (dolphins ===
+      <br />
+      koalas) { console.log("Both are champions!"); }
+      <br /><br />
+      <strong>Answer: Dolphins win the championships!</strong>
+    </code>
+
+    <script>
+      const dolphins = (96 + 108 + 89) / 3;
+      console.log(dolphins);
+
+      const koalas = (88 + 91 + 110) / 3;
+      console.log(koalas);
+
+      console.log(dolphins, koalas);
+
+      if (dolphins > koalas) {
+        console.log("Dolphins win the championships!");
+      } else if (koalas > dolphins) {
+        console.log("Koalas win the championships!");
+      } else if (dolphins === koalas) {
+        console.log("Both are champions!");
+      }
+
+      // Sandbox
+      const ageMichael = 2023 - 1979;
+      const ageRosie = 2023 - 1984;
+      const ageColin = 2023 - 2018;
+      console.log(ageMichael, ageRosie, ageColin);
+
+      if (ageColin > ageMichael + ageRosie) {
+        console.log("Colin is older!");
+      } else if (ageRosie + ageColin > ageMichael) {
+        console.log("Rosie and Colin combined are older!");
+      } else {
+        console.log("They are now the same age!");
+      }
+
+      // Playing with Boolean Operators
+      if (ageMichael && ageColin >= ageRosie) {
+        console.log("Michael and Colin win!");
+      } else if (ageMichael || ageColin < ageRosie) {
+        console.log("Rosie is the winner!");
+      }
+    </script>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
