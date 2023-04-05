@@ -1,0 +1,48 @@
+html {
+  background-color: #171717;
+}
+
+body {
+  width: 90%;
+  margin: 2% auto;
+  padding: 3%;
+  background-color: #ffffff;
+  font-family: "Arial";
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  background-color: #f2f2f2;
+  padding: 1%;
+  border-radius: 5px;
+  display: block;
+}
+
+h2 {
+  padding-top: 15px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+code {
+  background-color: #c5fcff;
+  padding: 2%;
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+mark {
+  padding: 0 5px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgb(220, 220, 220);
+}

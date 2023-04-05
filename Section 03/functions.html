@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Functions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <p>
+      A function allows you to reuse a piece of code. Also, receive data and
+      return data back. Functions are useable for implementing DRY (Do not
+      Repeat Yourself) code.
+    </p>
+
+    <code>
+      function logger() {
+      <br />
+      console.log("My name is Michael.");
+      <br />
+      }
+      <br /><br />
+
+      // Calling / Running / Invoking the function
+      <br />
+      logger();
+      <br /><br />
+
+      // Running a function that passes through data in the parameters.
+      <br />
+      function fruitProcessor(apples, oranges) {
+      <br />
+      const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+      <br />
+      return juice;
+      <br />
+      }
+      <br /><br />
+
+      const yourDrink = fruitProcessor(5, 4);
+      <br />
+      console.log(yourDrink);
+      <br /><br />
+
+      const yourOtherDrink = fruitProcessor(15, 25);
+      <br />
+      console.log(yourOtherDrink);
+      <br /><br />
+
+      // Another example
+      <br />
+      function venadasFamily(husband, wife, child) {
+      <br />
+      console.log(husband, wife, child);
+      <br />
+      const family = `Meet the Venadas family, ${husband} , ${wife} , and
+      ${child}!`;
+      <br />
+      return family;
+      <br />
+      }
+      <br /><br />
+
+      const names = venadasFamily("Michael", "Rosie", "Colin");
+      <br />
+      console.log(names);
+    </code>
+
+    <script>
+      function logger() {
+        console.log("My name is Michael.");
+      }
+
+      // Calling / Running / Invoking the function
+      logger();
+
+      // Running a function that passes through data in the parameters.
+      function fruitProcessor(apples, oranges) {
+        const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+        return juice;
+      }
+
+      const yourDrink = fruitProcessor(5, 4);
+      console.log(yourDrink);
+
+      const yourOtherDrink = fruitProcessor(15, 25);
+      console.log(yourOtherDrink);
+
+      // Another example
+      function venadasFamily(husband, wife, child) {
+        console.log(husband, wife, child);
+        const family = `Meet the Venadas family, ${husband} , ${wife} , and ${child}!`;
+        return family;
+      }
+
+      const names = venadasFamily("Michael", "Rosie", "Colin");
+      console.log(names);
+
+      // Another example
+      function cars(bmw, mercedes, lexus) {
+        const carsOwned = `I have ${bmw} BMW's, ${mercedes} Mercedes', and ${lexus} Lexus. Lucky guy! `;
+        return carsOwned;
+      }
+
+      const myCars = cars(3, 4, 1);
+      console.log(myCars);
+
+      // Another example
+      function videoGames(sports, rpg) {
+        const myGames = `Here's my thoughts on the types of video games, ${sports} and ${rpg}`;
+        return myGames;
+      }
+
+      const games = videoGames("Sports games are cool", "RPG games rock!");
+      console.log(games);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
