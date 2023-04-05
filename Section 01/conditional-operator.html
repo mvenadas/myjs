@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Conditional (Ternary) Operator</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Conditional (Ternary) Operator</h1>
+    <p>
+      A conditional is for example an <mark>if statement</mark> or a
+      <mark>switch statement</mark>, but there is also a conditional statement.
+      It is like an if statement but you can write it all in one line.
+    </p>
+    <code>
+      const age = 25;
+      <br /><br />
+      age >= 21 <mark>?</mark> console.log("I want a big beer 🍺")
+      <mark>:</mark> console.log("Boo, give me a soda 🥤"); <br /><br />
+      <mark>?</mark> is like the if
+      <br />
+      <mark>:</mark> is like the else
+    </code>
+    <br />
+    <code>
+      <strong>Example:</strong> Storing a coditional operator in a variable.
+      <br /><br />
+      const drink = age >= 18 ? "Beer!" : "Water";
+      <br />
+      console.log(drink);
+      <br /><br />
+      Answer: Beer!
+    </code>
+    <br />
+    <code>
+      <strong>Example:</strong> Using a conditional operator in a template
+      literal.
+      <br />
+      console.log(`I like to drink ${age >= 18 ? "Beer!" : "Water"}`);
+    </code>
+
+    <script>
+      const age = 25;
+      age >= 21
+        ? console.log("I want a big beer 🍺")
+        : console.log("Boo, give me a soda 🥤");
+
+      // Example of storing the conditional in a value.
+      const drink = age >= 18 ? "Beer!" : "Water";
+      console.log(drink);
+
+      // Example of using a conditional operator in a template literal.
+      console.log(`I like to drink ${age >= 18 ? "Beer!" : "Water"}`);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
