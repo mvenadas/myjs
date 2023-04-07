@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Functions Calling Other Functions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Functions Calling Other Functions</h1>
+    <p>
+      In JavaScript, you can call a function that returns another function by
+      first assigning the returned function to a variable and then calling it
+      using the variable name, followed by parentheses.
+    </p>
+    <img src="img/function-anatomy.png" alt="Function Anatomy" />
+    <code>
+      function <mark>cutFruitPieces(fruit)</mark> {
+      <br />
+      return fruit * 4;
+      <br />
+      }
+      <br /><br />
+
+      function fruitProcessor(apples, oranges) {
+      <br />
+      const applePieces = <mark>cutFruitPieces(apples)</mark>;
+      <br />
+      const orangePieces = <mark>cutFruitPieces(oranges)</mark>;
+      <br />
+      const juice = `Juice with ${applePieces} pieces of apples and
+      ${orangePieces} pieces of oranges.`;
+      <br />
+      return juice;
+      <br />
+      }
+      <br /><br />
+      console.log(fruitProcessor(2, 3));
+      <br /><br />
+      Answer: Juice with 8 pieces of apples and 12 pieces of oranges.
+    </code>
+
+    <code>
+      <strong>Another Example:</strong>
+      <br /><br />
+      function <mark>howMany(amount)</mark> {
+      <br />
+      return amount * 2;
+      <br />
+      }
+      <br /><br />
+      function vendingMachine(bought) {
+      <br />
+      const howManyBought = <mark>howMany(5)</mark>;
+      <br />
+      const whatIBought = `I was hungry so I bought and ate ${howManyBought}
+      ${bought} from the vending machine.`;
+      <br />
+      return whatIBought;
+      <br />
+      }
+      <br /><br />
+      console.log(vendingMachine("Snickers Bars"));
+      <br /><br />
+      Answer: I was hungry so I bought and ate 10 Snickers Bars from the vending
+      machine.
+    </code>
+
+    <script>
+      function cutFruitPieces(fruit) {
+        return fruit * 4;
+      }
+
+      function fruitProcessor(apples, oranges) {
+        const applePieces = cutFruitPieces(apples);
+        const orangePieces = cutFruitPieces(oranges);
+
+        const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+        return juice;
+      }
+
+      console.log(fruitProcessor(2, 3));
+
+      // Example
+
+      function howMany(amount) {
+        return amount * 2;
+      }
+
+      function vendingMachine(bought) {
+        const howManyBought = howMany(5);
+
+        const whatIBought = `I was hungry so I bought and ate ${howManyBought} ${bought} from the vending machine.`;
+        return whatIBought;
+      }
+
+      console.log(vendingMachine("Snickers Bars"));
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

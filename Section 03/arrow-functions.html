@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Arrow Functions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Arrow Functions</h1>
+    <p>An arrow function is simply a short form of a function to write.</p>
+    <code>
+      <strong>Example</strong>
+      <br /><br />
+      const calcAge3 = <mark>(birthYear) => 2023 - birthYear</mark>;
+      <br />
+      const age3 = calcAge3(1979);
+      <br />
+      console.log(age3);
+      <br />
+      <br />
+      Note: Highlighted is the function.
+    </code>
+
+    <script>
+      const age = 44;
+
+      // Example of an arrow function
+      const calcAge3 = (birthYear) => 2023 - birthYear;
+      const age3 = calcAge3(1979);
+      console.log(age3);
+
+      // Calculate when a person retires based on their age.
+      const yearsUntilRetirement = (birthYear, firstName) => {
+        const retirement = 65 - age;
+        return `${firstName} retires in ${retirement} years.`;
+      };
+
+      console.log(yearsUntilRetirement(1979, "Michael"));
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

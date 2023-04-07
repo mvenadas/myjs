@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Function Declarations Vs. Expressions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Function Declarations Vs. Expressions</h1>
+    <h3>Function Declaration</h3>
+    <code>
+      <strong>Function Declaration</strong> - in this type of function you will
+      be naming the function. <br /><br />
+      function calcAge1(birthYear) {
+      <br />
+      <mark>return 2023 - birthYear;</mark>
+      <br />
+      }
+      <br /><br />
+
+      age = calcAge1(1979);
+      <br />
+      console.log(age);
+      <br /><br />
+      <mark>Note:</mark> in the "return" you can also do calculations that help
+      to reduce the amount of code you will need to write. Also, you can call
+      the function declaration before the function is defined. This is not
+      possible with function expressions.
+    </code>
+    <br /><br />
+    <h3>Function Expression</h3>
+    <code>
+      <strong>Function Expression</strong> - in this type of function you will
+      not name the function, it will be an anonymous function, but you will
+      store the function value in a variable. <br /><br />
+      const calcaAge2 = function (birthYear) {
+      <br />
+      return 2023 - birthYear;
+      <br />
+      };
+      <br /><br />
+      const age2 = calcaAge2(1979);
+      <br />
+      console.log(age2);
+    </code>
+    <p>
+      Note: Both types of functions are valid, it is just the matter of
+      preference. However, writing Function Expressions allows you to keep
+      things more structured by defining the function first and storing it in a
+      variable.
+    </p>
+
+    <script>
+      // Function Declaration - in this type of function you will be naming the function.
+      function calcAge1(birthYear) {
+        return 2023 - birthYear;
+      }
+
+      age = calcAge1(1979);
+      console.log(age);
+
+      //   Function Expression - in this type of function you will not name the function, it will be an anonymous function,
+      //   but you will store the function value in a variable.
+
+      const calcaAge2 = function (birthYear) {
+        return 2023 - birthYear;
+      };
+
+      const age2 = calcaAge2(1979);
+      console.log(age2);
+
+      // Example
+      const favouriteFood = function (healthy, notHealthy) {
+        const myFood = `I love to eat ${healthy} but also love to eat ${notHealthy}!`;
+        return myFood;
+      };
+
+      const yumYum = favouriteFood("grilled sandwiches", "steaks");
+      console.log(yumYum);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
