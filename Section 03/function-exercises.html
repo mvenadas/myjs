@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Function Exercises</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Function Exercises</h1>
+    <h2></h2>
+    <script>
+      // Example - function passing through numbers
+
+      function add(a, b) {
+        return a + b;
+      }
+
+      const sum = add(5, 10);
+      console.log(sum);
+
+      // Example - function logging a string
+
+      function greet(firstName, lastName) {
+        console.log(firstName + lastName);
+      }
+
+      greet("Michael", "Venadas");
+
+      // Example - function console logging a template literal
+
+      function aboutMe(name, height, hairColor) {
+        console.log(`My name is ${name}, I am ${height} and have ${hairColor}`);
+        return aboutMe;
+      }
+
+      const info = aboutMe("Michael Venadas", "5'11", "Dark Brown");
+
+      // Example - Displaying a sequence of numbers
+
+      function letters(x, y, z) {
+        return x + y + z;
+      }
+
+      const added = letters(2, 4, 6);
+      console.log(added);
+
+      // Example - function with an if/else statement
+
+      function colors(red) {
+        if (red === 1) {
+          console.log("Yes, I have one red color pencil.");
+        } else if (red === 2) {
+          console.log("I don't have a red, sorry.");
+        }
+        return red;
+      }
+
+      const myPencils = colors(2);
+
+      // Example - Invoking a function inside of another function
+      function cutFruit(fruit) {
+        return fruit * 4;
+      }
+
+      function fruitProcessor(apples) {
+        const appleSlices = cutFruit(apples);
+        return appleSlices;
+      }
+
+      const finalOrder = fruitProcessor(3);
+      console.log(finalOrder);
+
+      // Example - I want to buy a candy from a vending machine. The Snickers is $100. Do I have enough money after coming home from the baseball game?
+
+      const wallet = 55;
+      const snickers = 1.5;
+
+      function howMuchLeft(baseballGame) {
+        if (wallet <= baseballGame && snickers) {
+          console.log(`Nope, go home hungry 😡`);
+        } else {
+          console.log(`Yes, I have enought left to buy a Snickers bar 😀`);
+        }
+      }
+
+      howMuchLeft(48);
+
+      // Example
+
+      function pets(dogs, cats) {
+        return dogs + cats;
+      }
+
+      const totalAnimals = pets(3, 5);
+      console.log(totalAnimals);
+
+      document.querySelector(
+        "h2"
+      ).innerHTML = `At home I have in total ${totalAnimals}`;
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
