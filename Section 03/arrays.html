@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Arrays</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Arrays</h1>
+    <p>
+      Arrays are a data structure. Two most important data structures are arrays
+      and objects.
+      <br /><br />
+      Note: You cannot use a statement in the brackets of an Array when calling
+      out. You can use an expression.
+    </p>
+
+    <code>
+      <strong>The literal syntax of creating an Array</strong>
+      <br />
+      const friends = ["Richard", "Mauro", "Josh"];
+      <br />
+      console.log(friends);
+      <br /><br />
+
+      <strong>A different way of creating an Array, but with a function</strong>
+      <br />
+      const years = new Array(1991, 1984, 2008, 2020);
+      <br />
+      console.log(years);
+      <br /><br />
+
+      <strong>Gets the number of elements in the Array</strong>
+      <br />
+      console.log(friends.length);
+      <br /><br />
+
+      <strong
+        >Gets the last element of the Array. Note: Since the Array is "0" based
+        you will need to use the "- 1" within the call out</strong
+      >
+      <br />
+      console.log(friends[friends.length - 1]);
+      <br /><br />
+
+      <strong>Changing an element to the Array</strong>
+      <br />
+      friends[2] = "Alex";
+      <br />
+      console.log(friends);
+      <br /><br />
+
+      <strong>Holding differents types of information</strong>
+      <br />
+      const lastName = "Venadas";
+      <br />
+      const michael = [ "Michael", lastName, 2023 - 1979, "Front End Developer",
+      friends, ];
+      <br /><br />
+
+      console.log(michael);
+    </code>
+
+    <script>
+      // The literal syntax of creating an Array
+      const friends = ["Richard", "Mauro", "Josh"];
+      console.log(friends);
+
+      // A different way of creating an Array, but with a function
+      const years = new Array(1991, 1984, 2008, 2020);
+      console.log(years);
+
+      // Gets the number of elements in the Array
+      console.log(friends.length);
+
+      // Gets the last element of the Array. Note: Since the Array is "0" based you will need to use the "- 1" within the call out
+      console.log(friends[friends.length - 1]);
+
+      // Changing an element to the Array
+      friends[2] = "Alex";
+      console.log(friends);
+
+      // Holding differents types of information
+      const lastName = "Venadas";
+      const michael = [
+        "Michael",
+        lastName,
+        2023 - 1979,
+        "Front End Developer",
+        friends,
+      ];
+
+      console.log(michael);
+
+      // Exercise
+      const calcAge = function (birthYear) {
+        return 2023 - birthYear;
+      };
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
