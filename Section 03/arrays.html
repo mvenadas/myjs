@@ -13,8 +13,8 @@
       Arrays are a data structure. Two most important data structures are arrays
       and objects.
       <br /><br />
-      Note: You cannot use a statement in the brackets of an Array when calling
-      out. You can use an expression.
+      <strong>Note:</strong> You cannot use a statement in the brackets of an
+      Array when calling out. You can use an expression.
     </p>
 
     <code>
@@ -61,6 +61,33 @@
       <br /><br />
 
       console.log(michael);
+
+      <br /><br />
+      <strong>Exercise</strong>
+      <br />
+      const calcAge = function (birthYear) {
+      <br />
+      return 2023 - birthYear;
+      <br />
+      };
+      <br /><br />
+      const years2 = [1990, 2000, 2010, 2020];
+      <br /><br />
+
+      const age1 = calcAge(years2[0]);
+      <br />
+      const age2 = calcAge(years2[1]);
+      <br />
+      const age3 = calcAge(years[years.length - 1]);
+      <br />
+      <br />
+      console.log(age1, age2, age3);
+      <br />
+
+      const ages = [ calcAge(years2[0]), calcAge(years2[1]),
+      calcAge(years2[years.length - 1]), ];
+      <br />
+      console.log(ages);
     </code>
 
     <script>
@@ -98,6 +125,21 @@
       const calcAge = function (birthYear) {
         return 2023 - birthYear;
       };
+
+      const years2 = [1990, 2000, 2010, 2020];
+
+      const age1 = calcAge(years2[0]);
+      const age2 = calcAge(years2[1]);
+      const age3 = calcAge(years[years.length - 1]);
+
+      console.log(age1, age2, age3);
+
+      const ages = [
+        calcAge(years2[0]),
+        calcAge(years2[1]),
+        calcAge(years2[years.length - 1]),
+      ];
+      console.log(ages);
     </script>
 
     <script src="js/main.js"></script>

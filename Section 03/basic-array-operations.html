@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Basic Array Operations (Methods)</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Basic Array Operations (Methods)</h1>
+    <p>There are numerous methods that can be used with an Array.</p>
+
+    <code>
+      const friends = ["Richard", "Mauro", "Josh"];
+      <br /><br />
+
+      <strong
+        >Push - will add an element to the end of the array. Note that Push is a
+        function</strong
+      >
+      <br />
+      friends.push("Alex");
+      <br />
+      console.log(friends);
+      <br /><br />
+
+      <strong>Unshift - Adds an element to the begining of the array</strong>
+      <br />
+      friends.unshift("Jordan");
+      <br />
+      console.log(friends);
+      <br /><br />
+
+      <strong>Pop - Removes the last element of the array</strong>
+      <br />
+      friends.pop();
+      <br />
+      console.log(friends);
+      <br /><br />
+
+      <strong>Shift - Removes the first element of the array</strong>
+      <br />
+      friends.shift();
+      <br />
+      console.log(friends);<br /><br />
+
+      <strong
+        >IndexOf - Returns the number value (the place) of the element</strong
+      >
+      <br />
+      console.log(friends.indexOf("Mauro"));
+      <br /><br />
+
+      <strong
+        >Includes - Will return True or False of the element exists in the
+        array</strong
+      >
+      <br />
+      console.log(friends.includes("Josh"));
+      <br />
+      console.log(friends.includes("Michael"));
+    </code>
+
+    <p></p>
+
+    <script>
+      const friends = ["Richard", "Mauro", "Josh"];
+
+      // Push - will add an element to the end of the array. Note that Push is a function
+      friends.push("Alex");
+      console.log(friends);
+
+      // Unshift - Adds an element to the begining of the array
+      friends.unshift("Jordan");
+      console.log(friends);
+
+      // Pop - Removes the last element of the array
+      friends.pop();
+      console.log(friends);
+
+      // Shift - Removes the first element of the array
+      friends.shift();
+      console.log(friends);
+
+      // IndexOf - Returns the number value (the place) of the element
+      console.log(friends.indexOf("Mauro"));
+
+      // Includes - Will return True or False of the element exists in the array
+      console.log(friends.includes("Josh"));
+      console.log(friends.includes("Michael"));
+
+      // My Examples
+      const colors = [
+        "red",
+        "black",
+        "green",
+        "blue",
+        "purple",
+        "pink",
+        "teal",
+        "orange",
+        "brown",
+        "white",
+        "yellow",
+      ];
+
+      colors.push("beige");
+      console.log(colors);
+
+      colors.unshift("gray");
+      console.log(colors);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
