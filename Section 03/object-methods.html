@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Object Methods</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Object Methods</h1>
+    <p>
+      Functions can be added to objects. Any function that is attached to an
+      object is called a <mark>Method</mark>.
+    </p>
+
+    <code>
+      <strong
+        >Example using the "this" keyword. Using this will elimate having to
+        pass through the arguement.</strong
+      >
+      <br />
+      <strong
+        >Since the object "michael" contains the function "calcage" using "this"
+        will point to that property.</strong
+      >
+      <br /><br />
+
+      const michael = {
+      <br />
+      firstName: "Michael",
+      <br />
+      lastName: "Venadas",
+      <br />
+      birthYear: 1979,
+      <br />
+      job: "Front End Developer",<br />
+      friends: ["Richard", "Mauro", "Josh"],
+      <br />
+      hasDriversLicense: true,
+      <br />
+      calcAge: function (birthYear) {
+      <br />
+      return 2023 - this.birthYear;
+      <br />
+      },
+      <br /><br />
+
+      <strong>Challenge - Create the string</strong>
+      <br />
+      <strong
+        >"Michael is a 44-year old front end developer, and he has a driver's
+        license."</strong
+      >
+      <br />
+
+      getSummary: function () {
+      <br />
+      return `${this.firstName} is a ${this.calcAge()}-year old ${michael.job },
+      and has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;},
+      <br />
+      };
+      <br /><br />
+
+      console.log(michael.calcAge());
+      <br />
+      console.log(michael.getSummary());
+    </code>
+
+    <script>
+      // Example using the "this" keyword. Using this will elimate having to pass through the arguement.
+      // Since the object "michael" contains the function "calcage" using "this" will point to that property.
+
+      const michael = {
+        firstName: "Michael",
+        lastName: "Venadas",
+        birthYear: 1979,
+        job: "Front End Developer",
+        friends: ["Richard", "Mauro", "Josh"],
+        hasDriversLicense: true,
+        calcAge: function (birthYear) {
+          return 2023 - this.birthYear;
+        },
+
+        // Challenge - Create the string
+        // "Michael is a 44-year old front end developer, and he has a driver's license."
+
+        getSummary: function () {
+          return `${this.firstName} is a ${this.calcAge()}-year old ${
+            michael.job
+          }, and has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+        },
+      };
+
+      console.log(michael.calcAge());
+      console.log(michael.getSummary());
+
+      // My example
+      cars = {
+        make: ["Ford", "Jeep", "Chevy", "Toyota", "Honda", "Kia", "Acura"],
+        yearBuilt: [2018, 2019, 2020, 2021, 2022, 2023],
+        colors: [
+          "black",
+          "red",
+          "silver",
+          "blue",
+          "gray",
+          "white",
+          "lightbrown",
+          "burgundy",
+        ],
+        calcCarsAge: function () {
+          return 2023 - this.yearBuilt[1];
+        },
+      };
+
+      // My exercise: My name is Michael and I just bought a new year color car!
+
+      console.log(
+        `My name is ${michael.firstName} and I just bought a ${
+          cars.yearBuilt[1]
+        } ${cars.colors[0]} ${
+          cars.make[3]
+        }. I know it's not brand new, but it's only ${cars.calcCarsAge()} years old!`
+      );
+
+      // Another example
+      function add(a, b) {
+        return a + b;
+      }
+
+      const sum = add(2, 5);
+      console.log(sum);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

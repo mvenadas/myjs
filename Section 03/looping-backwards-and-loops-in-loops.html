@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Looping Backwards And Loops In Loops</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Looping Backwards And Loops In Loops</h1>
+
+    <code>
+      const michael = [
+      <br />
+      "Michael",
+      <br />
+      "Venadas",
+      <br />
+      2023 - 1979,
+      <br />
+      "Front End Developer",
+      <br />
+      ["Richard", "Mauro", "Josh"],
+      <br />
+      ];
+      <br /><br />
+
+      <strong>Looping backwards</strong>
+      <br />
+      for (let i = michael.length - 1; i >= 0; i--) {
+      <br />
+      console.log(i, michael[i]);
+      <br />
+      }
+      <br /><br />
+
+      <strong>Loops in loops</strong>
+      <br />
+      for (let exercise = 1; exercise < 4; exercise++) {
+      <br />
+      console.log(`==== Starting Exercise ${exercise} ====`);
+      <br /><br />
+
+      for (let rep = 1; rep < 6; rep++) {
+      <br />
+      console.log(`Lifting Weights ${rep}`);
+      <br />
+      }
+      <br />
+      }
+    </code>
+
+    <script>
+      const michael = [
+        "Michael",
+        "Venadas",
+        2023 - 1979,
+        "Front End Developer",
+        ["Richard", "Mauro", "Josh"],
+        true,
+        false,
+        "Hello",
+      ];
+
+      // Looping backwards
+      for (let i = michael.length - 1; i >= 0; i--) {
+        console.log(i, michael[i]);
+      }
+
+      // Loops in loops
+      for (let exercise = 1; exercise < 4; exercise++) {
+        console.log(`==== Starting Exercise ${exercise} ====`);
+
+        for (let rep = 1; rep < 6; rep++) {
+          console.log(`Lifting Weights ${rep}`);
+        }
+      }
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

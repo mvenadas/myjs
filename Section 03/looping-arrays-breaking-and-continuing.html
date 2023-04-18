@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Looping Arrays, Breaking, and Continuing</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Looping Arrays, Breaking, and Continuing</h1>
+
+    <code>
+      <strong>Looping data from an array</strong>
+      <br /><br />
+      const michael = [
+      <br />
+      "Michael",
+      <br />
+      "Venadas",
+      <br />
+      2023 - 1979,
+      <br />
+      "Front End Developer",
+      <br />
+      ["Richard", "Mauro", "Josh"],
+      <br />
+      true,
+      <br />
+      ];
+      <br /><br />
+
+      for (let i = 0; i < michael.length; i++) {
+      <br />
+      console.log(michael[i]);
+      <br />
+      }
+      <br /><br />
+
+      <mark
+        ><strong>Pusing data into an empty array</strong> <br /><br />
+        const years = [1979, 1984, 2018];
+        <br />
+        const ages = [];
+        <br /><br />
+
+        for (i = 0; i < years.length; i++) {
+        <br />
+        ages.push(2023 - years[i]);
+        <br />
+        }
+        <br /><br />
+
+        console.log(ages);
+      </mark>
+      <br /><br />
+
+      <strong>Continue</strong>
+      <br />
+      console.log("---- ONLY STRINGS ----");
+      <br /><br />
+      for (i = 0; i < michael.length; i++) {
+      <br />
+      if (typeof michael[i] !== "string") continue;
+      <br />
+
+      console.log(michael[i], typeof michael[i]);
+      <br />
+      }
+      <br /><br />
+
+      <strong>Break</strong><br />
+      console.log("---- BREAK WITH NUMBER ----");
+      <br /><br />
+      for (i = 0; i < michael.length; i++) {
+      <br />
+      if (typeof michael[i] === "number") break;
+      <br />
+
+      console.log(michael[i], typeof michael[i]);
+      <br />
+      }
+    </code>
+
+    <script>
+      // Looping data from an array
+      const michael = [
+        "Michael",
+        "Venadas",
+        2023 - 1979,
+        "Front End Developer",
+        ["Richard", "Mauro", "Josh"],
+        true,
+      ];
+
+      for (let i = 0; i < michael.length; i++) {
+        console.log(michael[i]);
+      }
+
+      // Pusing data into an empty array
+      const years = [1979, 1984, 2018];
+      const ages = [];
+
+      for (i = 0; i < years.length; i++) {
+        ages.push(2023 - years[i]);
+      }
+
+      console.log(ages);
+
+      // Continue
+      console.log("---- ONLY STRINGS ----");
+      for (i = 0; i < michael.length; i++) {
+        if (typeof michael[i] !== "string") continue;
+
+        console.log(michael[i], typeof michael[i]);
+      }
+
+      // Break
+      console.log("---- BREAK WITH NUMBER ----");
+      for (i = 0; i < michael.length; i++) {
+        if (typeof michael[i] === "number") break;
+
+        console.log(michael[i], typeof michael[i]);
+      }
+
+      // My example - counting to 10
+      for (i = 0; i < 10; i++) {
+        console.log(i);
+      }
+
+      //  Another example - loop all the elements in an array
+      for (i = 0; i < michael.length; i++) {
+        console.log(michael[i]);
+      }
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

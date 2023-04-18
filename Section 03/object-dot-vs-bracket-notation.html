@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Object: Dot Vs. Bracket Notation</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>Object: Dot Vs. Bracket Notation</h1>
+    <h2></h2>
+    <h3></h3>
+
+    <code>
+      const michael = {
+      <br />
+      firstName: "Michael",
+      <br />
+      lastName: "Venadas",
+      <br />
+      age: 2023 - 1979,
+      <br />
+      job: "Front End Developer",
+      <br />
+      friends: ["Richard", "Mauro", "Josh"],
+      <br />
+      };
+      <br /><br />
+
+      <strong>Ways to call out the obect properties and its data</strong>
+      <br />
+      console.log(michael.lastName);
+      <br />
+      console.log(michael["lastName"]);
+      <br /><br />
+
+      <strong
+        >Using the bracket notation method using an expression. Note: You cannot
+        do this using the dot method</strong
+      >
+      <br />
+      const nameKey = "Name";
+      <br />
+      console.log(michael["first" + nameKey]);
+      <br />
+      console.log(michael["last" + nameKey]);
+      <br /><br />
+
+      <strong
+        >Using the prompt() to accept an input or prompt an error
+        message</strong
+      >
+      <br />
+      const interestedIn = prompt(
+      <br />
+      "What do you want to know about Michael? Choose between firstName,
+      lastName, age, job, and friends"
+      <br />
+      );
+      <br /><br />
+
+      if (michael[interestedIn]) {
+      <br />
+      console.log(michael[interestedIn]);
+      <br />
+      } else {
+      <br />
+      console.log(
+      <br />
+      "Wrong request! Choose between firstName, lastName, age, job, and friends"
+      <br />
+      );
+      <br />
+      }
+      <br /><br />
+
+      <strong
+        >Adding new properties to the object by using dot or bracet
+        notations</strong
+      >
+      <br />
+      michael.location = "Budapest";
+      <br />
+      console.log(michael);
+      <br /><br />
+
+      <strong
+        >Write out: "Michael has 3 friends, and his best friend is called
+        Richard."</strong
+      >
+      <br />
+
+      console.log(
+      <br />
+      `${michael.firstName} has ${michael.friends.length} friends, and his best
+      friend called ${michael.friends[0]}`
+      <br />
+      );
+    </code>
+
+    <script>
+      const michael = {
+        firstName: "Michael",
+        lastName: "Venadas",
+        age: 2023 - 1979,
+        job: "Front End Developer",
+        friends: ["Richard", "Mauro", "Josh"],
+      };
+
+      // Ways to call out the obect properties and its data
+      console.log(michael.lastName);
+      console.log(michael["lastName"]);
+
+      // Using the bracket notation method using an expression. Note: You cannot do this using the dot method
+      const nameKey = "Name";
+      console.log(michael["first" + nameKey]);
+      console.log(michael["last" + nameKey]);
+
+      // Using the prompt() to accept an input or prompt an error message
+      const interestedIn = prompt(
+        "What do you want to know about Michael? Choose between firstName, lastName, age, job, and friends"
+      );
+
+      if (michael[interestedIn]) {
+        console.log(michael[interestedIn]);
+      } else {
+        console.log(
+          "Wrong request! Choose between firstName, lastName, age, job, and friends"
+        );
+      }
+
+      // Adding new properties to the object by using dot or bracet notations
+      michael.location = "Budapest";
+      console.log(michael);
+
+      // Write out: "Michael has 3 friends, and his best friend is called Richard."
+
+      console.log(
+        `${michael.firstName} has ${michael.friends.length} friends, and his best friend called ${michael.friends[0]}`
+      );
+
+      // My examples
+      console.log(michael.lastName + " " + michael.age);
+      console.log(michael["lastName"]);
+
+      // Print to the screen
+      document.querySelector(
+        "h2"
+      ).innerHTML = `Hello, my name is ${michael.firstName} ${michael.lastName} and I a ${michael.job}`;
+
+      if (michael[interestedIn] === michael.firstName) {
+        document.querySelector("h3").innerHTML = "Hi!";
+      } else if (michael[interestedIn] === michael.age) {
+        document.querySelector(
+          "h3"
+        ).innerHTML = `I am ${michael.age} years old!`;
+      }
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

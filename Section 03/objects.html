@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise: Objects</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      img {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 992px) {
+        img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <p>
+      Objects are another form of a Data Structure in Javascript. In objects you
+      have a <mark>key</mark> and then a value. Different from arrays where you
+      can only call an array by the position (number value), in objects you can
+      call them by their keys. Note: There are many ways to create an object.
+    </p>
+    <img src="img/object-anatomy.png" alt="Object Anatomy" />
+
+    <script>
+      // Object literal syntax
+      const michael = {
+        firstName: "Michael",
+        lastName: "Venadas",
+        age: 2023 - 1979,
+        job: "Front End Developer",
+        friends: ["Richard", "Mauro", "Josh"],
+      };
+
+      console.log(michael);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
