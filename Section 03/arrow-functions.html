@@ -27,7 +27,7 @@
       const age = 44;
 
       // Example of an arrow function
-      const calcAge3 = (birthYear) => 2023 - birthYear;
+      const calcAge3 = birthYear => 2023 - birthYear;
       const age3 = calcAge3(1979);
       console.log(age3);
 
@@ -37,7 +37,7 @@
         return `${firstName} retires in ${retirement} years.`;
       };
 
-      console.log(yearsUntilRetirement(1979, "Michael"));
+      console.log(yearsUntilRetirement(1979, 'Michael'));
     </script>
 
     <script src="js/main.js"></script>

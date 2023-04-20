@@ -85,11 +85,11 @@
     <script>
       // Looping data from an array
       const michael = [
-        "Michael",
-        "Venadas",
+        'Michael',
+        'Venadas',
         2023 - 1979,
-        "Front End Developer",
-        ["Richard", "Mauro", "Josh"],
+        'Front End Developer',
+        ['Richard', 'Mauro', 'Josh'],
         true,
       ];
 
@@ -108,17 +108,17 @@
       console.log(ages);
 
       // Continue
-      console.log("---- ONLY STRINGS ----");
+      console.log('---- ONLY STRINGS ----');
       for (i = 0; i < michael.length; i++) {
-        if (typeof michael[i] !== "string") continue;
+        if (typeof michael[i] !== 'string') continue;
 
         console.log(michael[i], typeof michael[i]);
       }
 
       // Break
-      console.log("---- BREAK WITH NUMBER ----");
+      console.log('---- BREAK WITH NUMBER ----');
       for (i = 0; i < michael.length; i++) {
-        if (typeof michael[i] === "number") break;
+        if (typeof michael[i] === 'number') break;
 
         console.log(michael[i], typeof michael[i]);
       }
