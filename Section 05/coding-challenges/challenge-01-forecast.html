@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Coding Challenge: Challenge #1 - Transforming Arrat into a String
+    </title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <h1>Coding Challenge: Challenge #1 - Forecast</h1>
+
+    <script>
+      // Questions
+      // 1: How are you predicting the temperatures in the coming days?
+      // 2: What is test data #2 used for?
+
+      // Task #1 - Create an Array with the maximum temperatures
+      const data1 = [17, 21, 23];
+      const data2 = [12, 5, -5, 0, 4];
+      const data3 = data1.concat(data2);
+
+      const printForecast = function (arr) {
+        let str = '';
+        for (let i = 0; i < arr.length; i++) {
+          str += `${arr[i]}°C in ${i + 1} days ... `;
+        }
+        console.log('...' + str);
+      };
+
+      printForecast(data3);
+    </script>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>

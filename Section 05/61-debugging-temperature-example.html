@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>61 - Exercise: Debugging with the Console and Breakpoints</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <h1>61 - Debugging with the Console and Breakpoints</h1>
+    <p>
+      Example of debugging from the console. In this example also contains
+      creating an Object inside of a function also converting a string into a
+      Number.
+    </p>
+    <br />
+    const measureKelvin = function () {
+    <br />
+    const measurement = {
+    <br />
+    type: 'temp',
+    <br />
+    unit: 'celsius',
+    <br /><br />
+
+    <strong>FIX</strong>
+    <br />
+    value: Number(prompt('Degrees celsius')),
+    <br />
+    };
+    <br /><br />
+
+    <strong>FIND</strong>
+    <br />
+    console.table(measurement);
+    <br /><br />
+
+    const kelvin = measurement.value + 273;
+    <br />
+    return kelvin;
+    <br />
+    };
+    <br /><br />
+    <strong>IDENTIFY</strong>
+    <br />
+    console.log(measureKelvin());
+
+    <script>
+      // Example of debugging from the console. In this example also contains creating an Object inside of a function also
+      // converting a string into a Number.
+      const measureKelvin = function () {
+        const measurement = {
+          type: 'temp',
+          unit: 'celsius',
+
+          // C) FIX
+          //   value: Number(prompt('Degrees celsius')),
+        };
+
+        // B) FIND
+        console.table(measurement);
+
+        const kelvin = measurement.value + 273;
+        return kelvin;
+      };
+
+      // A) IDENTIFY
+      console.log(measureKelvin());
+
+      // My Example
+
+      // Create a recipe for an omelette. List the ingredients and assign how much per serving for each. Also, there will be 3 people
+      // eating breakfast. Michael wants 2 omelettes, Rosie, 1.5, Colin 1. How many eggs will you need to complete your order?
+
+      // Task #1 - Create a recipe for an omelette. List the ingredients and assign how much per serving for each.
+      const recipe = {
+        eggs: 1,
+        mushrooms: 10,
+        greenPeppers: 3,
+        spinach: '1 pound',
+        cheese: '10',
+        onions: 1,
+        tomato: 1,
+        ham: 0.5,
+        salt: 1,
+        pepper: 0.5,
+      };
+
+      // Task #2 - There will be 3 people eating breakfast
+
+      let michael = 3;
+      let rosie = 2;
+      let colin = 1;
+
+      // Task #3 - Michael wants 3 omelettes, Rosie, 2, Colin 1. How many eggs will you need to complete your order?
+
+      for (let i = 0; i < 10; i++) {
+        console.log('Hi');
+      }
+
+      // Function and Loop Practice
+
+      // function add(a, b) {
+      //   return a * b;
+      // }
+
+      // const sum = add(33, 66);
+      // console.log(sum);
+
+      const michaelAge = 44;
+      const rosieAge = 38;
+
+      const sum = function (a, b) {
+        return a * b;
+      };
+
+      console.log(sum(michaelAge, rosieAge));
+
+      const combinedAge = michaelAge + rosieAge;
+      console.log(combinedAge);
+
+      for (let i = 0; i < 10; i++) {
+        console.log(i + combinedAge);
+      }
+    </script>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      59 - Exercise: Using Google, Stackoverflow, and MDN - Problem Solving
+    </title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h1>59 - Using Google, Stackoverflow, and MDN - Problem Solving</h1>
+    <code>
+      const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+      <br /><br />
+
+      const calcTempAmplitude = function (temps) {
+      <br />
+      let max = temps[0];
+      <br />
+      let min = temps[0];
+      <br /><br />
+
+      for (let i = 0; i < temps.length; i++) {
+      <br />
+      const curTemp = temps[i];
+      <br />
+      if (typeof curTemp !== 'number') continue;
+      <br />
+      if (curTemp > max) max = curTemp;
+      <br />
+      if (curTemp < min) min = curTemp;
+      <br />
+      }
+      <br /><br />
+      console.log(max, min);
+      <br />
+      };
+      <br /><br />
+
+      calcTempAmplitude([3, 7, 4, 1, 8]);
+    </code>
+
+    <strong><p>My example</p></strong>
+
+    <p>
+      Array of lotto numbers, we want to find out today's winner. The winning
+      lotto number consist of the highest average. Note: In this example I used
+      MDN Web Docs to research and find the reduce method that helped me add up
+      the numbers in the array.
+    </p>
+    <br />
+    <code>
+      <strong>Task #1 - Add up all the numbers for each lotto player</strong>
+      <br /><br />
+      const michaelLotto = [123, 222, 848, 991, 10, 78];<br />
+      const richardLotto = [113, 22, 818, 490, 2, 78];<br />
+      <br />
+      let initialValue = 0;
+      <br />
+      let michaelTotal = michaelLotto.reduce(
+      <br />
+      (set1, set2) => set1 + set2,
+      <br />
+      initialValue
+      <br />
+      );
+      <br /><br />
+      let richardTotal = richardLotto.reduce(
+      <br />
+      (set1, set2) => set1 + set2,
+      <br />
+      initialValue
+      <br />
+      );
+      <br /><br />
+
+      console.log(michaelTotal, richardTotal);
+      <br /><br />
+      <strong>Task #2 - Find the highest average of the 2 player</strong>
+      <br />
+      function whoWins() {
+      <br />
+      if (michaelTotal > richardTotal) {
+      <br />
+      console.log('Mike wins the lotto!');
+      <br />
+      } else {
+      <br />
+      console.log('Richard wins the lotto!');
+      <br />
+      }
+      <br />
+      }
+      <br /><br />
+      const winner = whoWins();
+      <br />
+      console.log(winner);
+    </code>
+    <script>
+      const temperatures = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+      const calcTempAmplitude = function (temps) {
+        let max = temps[0];
+        let min = temps[0];
+
+        for (let i = 0; i < temps.length; i++) {
+          const curTemp = temps[i];
+          if (typeof curTemp !== 'number') continue;
+          if (curTemp > max) max = curTemp;
+          if (curTemp < min) min = curTemp;
+        }
+        console.log(max, min);
+      };
+
+      calcTempAmplitude([3, 7, 4, 1, 8]);
+
+      // =================================
+
+      // My example
+
+      // Array of lotto numbers, we want to find out today's winner. The winning lotto number consist of the highest average.
+      const michaelLotto = [123, 222, 848, 991, 10, 78];
+      const richardLotto = [113, 22, 818, 490, 2, 78];
+
+      // Task #1 - Add up all the numbers for each lotto player
+      let initialValue = 0;
+
+      let michaelTotal = michaelLotto.reduce(
+        (set1, set2) => set1 + set2,
+        initialValue
+      );
+      let richardTotal = richardLotto.reduce(
+        (set1, set2) => set1 + set2,
+        initialValue
+      );
+
+      console.log(michaelTotal, richardTotal);
+
+      // Task #2 - Find the highest average of the 2 players
+
+      function whoWins() {
+        if (michaelTotal > richardTotal) {
+          console.log('Mike wins the lotto!');
+        } else {
+          console.log('Richard wins the lotto!');
+        }
+      }
+
+      const winner = whoWins();
+
+      console.log(winner);
+    </script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise: Object: Dot Vs. Bracket Notation</title>
+    <title>43 - Exercise: Object: Dot Vs. Bracket Notation</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Object: Dot Vs. Bracket Notation</h1>
+    <h1>43 - Object: Dot Vs. Bracket Notation</h1>
     <h2></h2>
     <h3></h3>
 
@@ -101,37 +101,37 @@
 
     <script>
       const michael = {
-        firstName: "Michael",
-        lastName: "Venadas",
+        firstName: 'Michael',
+        lastName: 'Venadas',
         age: 2023 - 1979,
-        job: "Front End Developer",
-        friends: ["Richard", "Mauro", "Josh"],
+        job: 'Front End Developer',
+        friends: ['Richard', 'Mauro', 'Josh'],
       };
 
       // Ways to call out the obect properties and its data
       console.log(michael.lastName);
-      console.log(michael["lastName"]);
+      console.log(michael['lastName']);
 
       // Using the bracket notation method using an expression. Note: You cannot do this using the dot method
-      const nameKey = "Name";
-      console.log(michael["first" + nameKey]);
-      console.log(michael["last" + nameKey]);
+      const nameKey = 'Name';
+      console.log(michael['first' + nameKey]);
+      console.log(michael['last' + nameKey]);
 
       // Using the prompt() to accept an input or prompt an error message
       const interestedIn = prompt(
-        "What do you want to know about Michael? Choose between firstName, lastName, age, job, and friends"
+        'What do you want to know about Michael? Choose between firstName, lastName, age, job, and friends'
       );
 
       if (michael[interestedIn]) {
         console.log(michael[interestedIn]);
       } else {
         console.log(
-          "Wrong request! Choose between firstName, lastName, age, job, and friends"
+          'Wrong request! Choose between firstName, lastName, age, job, and friends'
         );
       }
 
       // Adding new properties to the object by using dot or bracet notations
-      michael.location = "Budapest";
+      michael.location = 'Budapest';
       console.log(michael);
 
       // Write out: "Michael has 3 friends, and his best friend is called Richard."
@@ -141,19 +141,19 @@
       );
 
       // My examples
-      console.log(michael.lastName + " " + michael.age);
-      console.log(michael["lastName"]);
+      console.log(michael.lastName + ' ' + michael.age);
+      console.log(michael['lastName']);
 
       // Print to the screen
       document.querySelector(
-        "h2"
+        'h2'
       ).innerHTML = `Hello, my name is ${michael.firstName} ${michael.lastName} and I a ${michael.job}`;
 
       if (michael[interestedIn] === michael.firstName) {
-        document.querySelector("h3").innerHTML = "Hi!";
+        document.querySelector('h3').innerHTML = 'Hi!';
       } else if (michael[interestedIn] === michael.age) {
         document.querySelector(
-          "h3"
+          'h3'
         ).innerHTML = `I am ${michael.age} years old!`;
       }
     </script>

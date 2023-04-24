@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise: Object Methods</title>
+    <title>44 - Exercise: Object Methods</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Object Methods</h1>
+    <h1>44 - Object Methods</h1>
     <p>
       Functions can be added to objects. Any function that is attached to an
       object is called a <mark>Method</mark>.
@@ -72,11 +72,11 @@
       // Since the object "michael" contains the function "calcage" using "this" will point to that property.
 
       const michael = {
-        firstName: "Michael",
-        lastName: "Venadas",
+        firstName: 'Michael',
+        lastName: 'Venadas',
         birthYear: 1979,
-        job: "Front End Developer",
-        friends: ["Richard", "Mauro", "Josh"],
+        job: 'Front End Developer',
+        friends: ['Richard', 'Mauro', 'Josh'],
         hasDriversLicense: true,
         calcAge: function (birthYear) {
           return 2023 - this.birthYear;
@@ -88,7 +88,7 @@
         getSummary: function () {
           return `${this.firstName} is a ${this.calcAge()}-year old ${
             michael.job
-          }, and has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+          }, and has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
         },
       };
 
@@ -97,17 +97,17 @@
 
       // My example
       cars = {
-        make: ["Ford", "Jeep", "Chevy", "Toyota", "Honda", "Kia", "Acura"],
+        make: ['Ford', 'Jeep', 'Chevy', 'Toyota', 'Honda', 'Kia', 'Acura'],
         yearBuilt: [2018, 2019, 2020, 2021, 2022, 2023],
         colors: [
-          "black",
-          "red",
-          "silver",
-          "blue",
-          "gray",
-          "white",
-          "lightbrown",
-          "burgundy",
+          'black',
+          'red',
+          'silver',
+          'blue',
+          'gray',
+          'white',
+          'lightbrown',
+          'burgundy',
         ],
         calcCarsAge: function () {
           return 2023 - this.yearBuilt[1];
