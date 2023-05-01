@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>71 - DOM Manipulation - Cheatsheet</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <h1>71 - DOM Manipulation - Cheatsheet</h1>
+
+    <section>
+      <strong>Selecting a class and changing the text</strong>
+      <br /><br />
+      <code>
+        document.querySelector('.someText').textContent = 'New Text!';
+      </code>
+      <br /><br />
+      <span class="someText">Selecting some text.</span>
+    </section>
+
+    <section>
+      <strong>Selecting the value in an input field and adding a number</strong>
+      <br /><br />
+      <code> document.querySelector('.inputField').value = '18'; </code>
+      <br /><br />
+      <input class="inputField" type="text" />
+    </section>
+
+    <section>
+      <strong
+        >Passing through a value from an input field and setting up an Event
+        Listener</strong
+      >
+      <br /><br />
+      <code>
+        document.querySelector('.check').addEventListener('click', function () {
+        <br />
+        console.log(document.querySelector('.guess').value);
+        <br />
+        });
+      </code>
+      <br /><br />
+      <input class="guess" type="text" />
+      <button class="check">Submit</button>
+    </section>
+
+    <script>
+      // Selecting a class and changing the text
+      document.querySelector('.someText').textContent = 'New Text!';
+
+      // Selecting the value in an input field and adding a number
+      document.querySelector('.inputField').value = '18';
+
+      // Passing through a value from an input field and setting up an Event Listener
+      document.querySelector('.check').addEventListener('click', function () {
+        console.log(document.querySelector('.guess').value);
+      });
+    </script>
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
